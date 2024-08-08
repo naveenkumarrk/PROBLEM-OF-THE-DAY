@@ -30,10 +30,11 @@ def distinctStrSet(arr, k):
     for i in arr:
         if i not in dup:
             k -= 1
-        
+         
         if k == 0:
             return i
     
     return ''
 
-print(distinctStrSet(arr, k))
+c = distinctStrSet(arr, k)
+print(c)
