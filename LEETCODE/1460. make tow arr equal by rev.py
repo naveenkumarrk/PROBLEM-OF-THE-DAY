@@ -2,6 +2,9 @@
 #     def canBeEqual(self, target: List[int], arr: List[int]) -> bool:
 #         return Counter(target) == Counter(arr)
 
+import os
+from sys import stdin
+from json import loads
 
 with open("user.out", "w") as f:
     for target, arr in zip(map(loads, stdin), map(loads, stdin)):
